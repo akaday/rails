@@ -1,4 +1,4 @@
-**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON https://guides.rubyonrails.org.**
+**DO NOT READ THIS FILE ON GITHUB, GUIDES ARE PUBLISHED ON <https://guides.rubyonrails.org>.**
 
 Active Record Associations
 ==========================
@@ -1395,8 +1395,8 @@ specified on the associated model, the associated object _will_ be saved.
 @assembly = @part.assemblies.create({ assembly_name: "Transmission housing" })
 ```
 
-Does the same as `collection.create`, but raises `ActiveRecord::RecordInvalid`
-if the record is invalid.
+`collection.create!` does the same as `collection.create`, but raises
+`ActiveRecord::RecordInvalid` if the record is invalid.
 
 The [`collection.reload`][] method returns a Relation of all of the associated
 objects, forcing a database read. If there are no associated objects, it returns

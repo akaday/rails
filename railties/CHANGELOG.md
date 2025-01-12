@@ -1,6 +1,14 @@
+*   Introduce `RAILS_MASTER_KEY` placeholder in generated ci.yml files
+
+    *Steve Polito*
+
+*   Colorize the Rails console prompt even on non standard environments.
+
+    *Lorenzo Zabot*
+
 *   Don't enable YJIT in development and test environments
 
-    Development and test environment tend to reload code and redefine methods (e.g. mocking),
+    Development and test environments tend to reload code and redefine methods (e.g. mocking),
     hence YJIT isn't generally faster in these environments.
 
     *Ali Ismayilov*, *Jean Boussier*
